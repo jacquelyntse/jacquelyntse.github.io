@@ -9,13 +9,13 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #444444;
-  font-size: .75rem;
+  font-size: 1rem;
 }
 
 a {
-  color: #106eea;
+  color: #7bac66;
   text-decoration: none;
 
 }
@@ -26,31 +26,36 @@ a {
   padding: 0 3px;
 }
 
-a:before {
+
+.underline-link a:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #106eea;
+  background-color: #a6cd96;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+.underline-link a:hover:before {
   visibility: visible;
   width: 100%;
 }
 
-a:hover {
-  color: #3b8af2;
+.underline-link a:hover {
+  color: #7bac66;
   text-decoration: none;
 }
 
+.underline-link i{
+  vertical-align: middle;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -72,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #106eea;
+  border: 6px solid #a6cd96;
   border-top-color: #e2eefd;
   border-radius: 50%;
   width: 60px;
@@ -118,15 +123,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #106eea;
+  background: #a6cd96;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #3284f1;
+  background: #7bac66;
   color: #fff;
+  text-decoration: none;
 }
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -141,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #106eea;
+  background: #a6cd96;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -206,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0.8px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 #header .logo a {
@@ -214,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a span {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 #header .logo img {
@@ -259,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   font-weight: 600;
   padding: 0 3px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nunito', sans-serif;;
 }
 
 .nav-menu > ul > li > a:before {
@@ -269,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #106eea;
+  background-color: #a6cd96;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -281,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 .nav-menu .drop-down ul {
@@ -318,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 .nav-menu .drop-down > a:after {
@@ -413,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #106eea;
+  color: #a6cd96;
   text-decoration: none;
 }
 
@@ -506,11 +513,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 #hero h1 span {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 #hero h2 {
@@ -531,7 +538,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -541,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #106eea;
+  background: #a6cd96;
 }
 
 #hero .btn-get-started:hover {
@@ -560,7 +567,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-watch-video i {
-  color: #106eea;
+  color: #a6cd96;
   font-size: 32px;
   position: absolute;
   left: 0;
@@ -569,11 +576,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-watch-video:hover {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 #hero .btn-watch-video:hover i {
-  color: #3b8af2;
+  color: #7bac66;
 }
 
 @media (min-width: 1024px) {
@@ -654,7 +661,7 @@ section {
   padding: 8px 20px;
   margin: 0;
   background: #e7f1fd;
-  color: #106eea;
+  color: #a6cd96;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -669,7 +676,7 @@ section {
 }
 
 .section-title h3 span {
-  color: #106eea;
+  color: #222222;
 }
 
 
@@ -682,20 +689,20 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .section-title h4::after {
   content: "";
   width: 120px;
-  height: 1px;
+  height: 2px;
   display: inline-block;
-  background: #e6636a;
+  background: #a6cd96;
   margin: 4px 10px;
 }
 
 .section-title p {
-  margin-top:10px;
+  margin-top:1rem;
   font-size: 16px;
   font-weight: 400;
 }
@@ -794,7 +801,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #106eea;
+  background: #a6cd96;
   top: 0;
   border-radius: 0px;
 }
@@ -806,7 +813,7 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #106eea;
+  color: #a6cd96;
   transition: all 0.3s ease-in-out;
 }
 
@@ -878,7 +885,7 @@ section {
 .preview-card .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #106eea;
+  color: #a6cd96;
   transition: all 0.3s ease-in-out;
 }
 
@@ -892,6 +899,30 @@ section {
   color: #111;
 }
 
+.preview-card a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #a6cd96;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.preview-card a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.preview-card a:hover {
+  color: #7bac66;
+  text-decoration: none;
+}
+
+
 .preview-card .tags{
   margin-bottom:30px;
 }
@@ -901,8 +932,6 @@ section {
   padding-top:30px;
 
 }
-
-
 
 .preview-card i {
   vertical-align: middle;
@@ -936,8 +965,58 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+.description.resume {
+    transform: none;
+  }
+
+.resume h4{
+  font-weight: 700;
+  font-size: 24px;
+  color:#7bac66;
+}
+
+.resume h5{
+  font-weight: 700;
+  font-size: 18px;
+}
+.resume-bullet{
+  margin-bottom:1.75rem;
+}
+
+.resume-bullet span{
+  color:#777777;
+  font-size:.75rem;
+}
+.resume ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+  line-height:20px;
+  margin-top: -15px;
+}
+.resume ul li{
+  padding:8px;
+}
+.resume ul li:before {
+	content: "–";
+	position: absolute;
+	left: 0;
+  font-weight: 900;
+  color:#7bac66;
+}
+
+.resume-information{
+  padding:.75rem 1.5rem;
+}
+
+/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -964,7 +1043,7 @@ section {
   font-size: 24px;
   padding: 20px;
   margin-right: 15px;
-  color: #106eea;
+  color: #a6cd96;
   border-radius: 50px;
 }
 
@@ -997,7 +1076,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #222222;
 }
 
@@ -1015,7 +1094,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #106eea;
+  background-color: #a6cd96;
 }
 
 /*--------------------------------------------------------------
@@ -1039,7 +1118,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #106eea;
+  background: #a6cd96;
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -1056,7 +1135,7 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 14px;
 }
 
@@ -1111,7 +1190,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #3b8af2;
+  color: #7bac66;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -1122,7 +1201,7 @@ section {
   padding: 5px 10px;
   margin-right:10px;
   background: #e7f1fd;
-  color: #106eea;
+  color: #a6cd96;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -1134,7 +1213,7 @@ section {
   padding: 5px 10px;
   margin-right:10px;
   background: #e7f1fd;
-  color: #106eea;
+  color: #a6cd96;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -1172,11 +1251,11 @@ section {
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 .services .icon-box:hover .icon {
-  border-color: #106eea;
+  border-color: #a6cd96;
 }
 
 /*--------------------------------------------------------------
@@ -1268,7 +1347,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #106eea !important;
+  background-color: #a6cd96 !important;
 }
 
 @media (min-width: 1024px) {
@@ -1309,7 +1388,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1354,7 +1433,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -1380,7 +1459,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-links a:hover {
-  color: #6ba7f5;
+  color: #7bac66;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
@@ -1419,7 +1498,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #106eea !important;
+  background-color: #a6cd96 !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1520,7 +1599,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #3b8af2;
+  background: #7bac66;
 }
 
 .team .member .social i {
@@ -1582,9 +1661,9 @@ section {
 
 .pricing .box h4 {
   font-size: 36px;
-  color: #106eea;
+  color: #a6cd96;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1614,7 +1693,7 @@ section {
 }
 
 .pricing .box ul i {
-  color: #106eea;
+  color: #a6cd96;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1632,7 +1711,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #106eea;
+  background: #a6cd96;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 4px;
@@ -1640,18 +1719,18 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .pricing .btn-buy:hover {
-  background: #3b8af2;
+  background: #7bac66;
 }
 
 .pricing .featured h3 {
   color: #fff;
-  background: #106eea;
+  background: #a6cd96;
 }
 
 .pricing .advanced {
@@ -1663,7 +1742,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #106eea;
+  background: #a6cd96;
   color: #fff;
 }
 
@@ -1686,7 +1765,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #106eea;
+  font-family: #a6cd96;
   font-size: 18px;
   font-weight: 500;
 }
@@ -1704,7 +1783,7 @@ section {
 }
 
 .faq .faq-list a.collapse {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 .faq .faq-list a.collapsed {
@@ -1712,7 +1791,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 .faq .faq-list a.collapsed i::before {
@@ -1731,7 +1810,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #106eea;
+  color: #a6cd96;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #b3d1fa;
@@ -1817,7 +1896,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #106eea;
+  border-color: #a6cd96;
 }
 
 .contact .php-email-form input {
@@ -1829,7 +1908,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #106eea;
+  background: #a6cd96;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1838,7 +1917,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #3b8af2;
+  background: #7bac66;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1865,9 +1944,9 @@ section {
 #footer {
   background: #fff;
   padding: 0 0 30px 0;
-  color: #444444;
+  color: #a4a4a4;
   font-size: 14px;
-  background: #f1f6fe;
+  background: #f9f9f9;
 }
 
 #footer .footer-newsletter {
@@ -1910,7 +1989,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #106eea;
+  background: #a6cd96;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1939,14 +2018,14 @@ section {
 }
 
 #footer .footer-top .footer-contact h3 span {
-  color: #106eea;
+  color: #a6cd96;
 }
 
 #footer .footer-top .footer-contact p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #777777;
 }
 
@@ -1970,7 +2049,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #106eea;
+  color: #a6cd96;
   font-size: 18px;
   line-height: 1;
 }
@@ -1994,13 +2073,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #106eea;
+  color: #a6cd96;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #106eea;
+  background: #a6cd96;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -2013,7 +2092,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #3b8af2;
+  background: #7bac66;
   color: #fff;
   text-decoration: none;
 }
@@ -2032,6 +2111,20 @@ section {
   font-size: 16px;
   color: #444444;
   padding-top:10px;
+}
+
+
+#footer .social-media a{
+  color:#a4a4a4;
+}
+
+@media (max-width: 768px) {
+  #footer .social-media {
+    float: none;
+  }
+
+#footer .social-media a:hover{
+  color:#a6cd96;
 }
 
 @media (max-width: 768px) {

@@ -486,6 +486,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.6);
@@ -621,7 +622,6 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 
@@ -629,6 +629,40 @@ h1, h2, h3, h4, h5, h6 {
   #hero img{
   max-width: 160px;
   }
+}
+/*--------------------------------------------------------------
+# About v2
+--------------------------------------------------------------*/
+#about h1{
+  padding-bottom:1rem;
+}
+
+#about .section-title{
+  padding-bottom:30px;
+}
+.about{
+  padding-top:3rem;
+}
+
+.about ul {
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1.2em;
+    line-height: 20px;
+    margin-top: -15px;
+}
+
+.about ul li {
+    padding: 6px;
+}
+
+.about ul li:before {
+	content: "–";
+	position: absolute;
+	left: 0;
+  font-weight: 900;
+  color:#7bac66;
 }
 
 /*--------------------------------------------------------------
@@ -938,7 +972,6 @@ section {
 }
 
 .preview-card .description {
-  line-height: 20px;
   padding:20px 0px;
 
   position: relative;
@@ -946,7 +979,19 @@ section {
  transform: translateY(-50%);
 }
 
+.preview-card.description td{
+  padding-right: 15px;
+  padding:10px;
+  vertical-align: top;
+}
 
+.preview-card.description h3{
+  font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
 
 .preview-card img{
   float: right;
@@ -1212,8 +1257,8 @@ section {
   letter-spacing: 1px;
   padding: 5px 10px;
   margin-right:10px;
-  background: #e7f1fd;
-  color: #a6cd96;
+  background: #e9ecef;
+  color: #222222;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -1484,8 +1529,8 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
-  margin-top: 5px;
-  text-align: left;
+  margin: 20px 0;
+  text-align: right;
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot {
@@ -1509,8 +1554,12 @@ section {
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;
+  max-width:700px;
 }
-
+.section-title.portfolio-details h1 {
+  font-weight: 600;
+  color:#222222;
+}
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
@@ -1518,6 +1567,27 @@ section {
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
+
+.section-title.portfolio-details {
+    padding: 50px 0;
+  }
+
+.box.preview-card.description.design-process {
+      padding: 20px;
+      box-shadow: none;
+      margin-bottom:0;
+  }
+
+  @media (max-width: 768px) {
+    .box.preview-card.description.design-process {
+      padding: 15px;
+    }
+  }
+
+  .box.preview-card.description.design-process h3{
+      color:#7bac66;
+      margin:10px;
+    }
 
 .portfolio-details .portfolio-info ul {
   list-style: none;
@@ -1529,10 +1599,49 @@ section {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
-  padding-top: 50px;
+.portfolio-details table{
+  width:100%;
+  margin: 30px 0 0;
 }
 
+.portfolio-details td,th{
+   padding:8px;
+   padding-right:30px;
+   vertical-align: top;
+}
+
+.portfolio-description.preview-card{
+  margin: 0;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 50px;
+
+}
+
+.portfolio-details .portfolio-description ul li{
+  padding:5px;
+}
+
+.portfolio-details .portfolio-description ul{
+  line-height: normal;
+  margin: auto;
+}
+
+.portfolio-details .portfolio-description h3 {
+    margin:1.5rem 0;
+}
+
+.portfolio-details .portfolio-description h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.portfolio-details .portfolio-description h5 {
+  font-size:1.1rem;
+  font-weight:600;
+  padding:5px 0;
+}
 .portfolio-details .portfolio-description h2 {
   width: 50%;
   font-size: 26px;
@@ -1544,6 +1653,18 @@ section {
   padding: 0 0 0 0;
 }
 
+.portfolio-details p{
+  margin:1.5rem 0;
+
+}
+
+.portfolio-overview{
+  margin-right:20px;
+}
+
+.section-title.underline-link.portfolio-overview{
+  padding-bottom:0px;
+}
 @media (max-width: 768px) {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
@@ -1553,6 +1674,7 @@ section {
     margin-top: 30px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Team
@@ -2105,6 +2227,7 @@ section {
   padding-top:10px;
 }
 
+
 #footer .social-media {
   float: right;
   text-align: center;
@@ -2113,6 +2236,9 @@ section {
   padding-top:10px;
 }
 
+#footer .copyright i{
+  vertical-align: middle;
+}
 
 #footer .social-media a{
   color:#a4a4a4;
@@ -2133,4 +2259,17 @@ section {
     text-align: center;
     padding: 2px 0;
   }
+}
+
+
+/*--------------------------------------------------------------
+# United Airlines
+--------------------------------------------------------------*/
+
+#united {
+  width: 100%;
+  height: 90vh;
+  background: url("../assets/img/UnitedAirlines/unitedairlines.png") top left;
+  background-size: cover;
+  position: relative;
 }

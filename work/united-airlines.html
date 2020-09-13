@@ -28,6 +28,17 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113664489-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113664489-1');
+  </script>
+
+
 </head>
 
 <body>
@@ -69,7 +80,7 @@
               <table>
                 <tr>
                   <td><strong>Role</strong></td>
-                  <td>UI Designer</td>
+                  <td>UX/UI Designer</td>
                 </tr>
                 <tr>
                   <td><strong>Goal</strong></td>
@@ -100,7 +111,7 @@
           <div class="portfolio-description about">
               <h3>Design Process Overview</h3>
               <div class="row">
-                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4 col-md-4">
                   <div class="box  preview-card description design-process">
                     <h3><span>01.</span> understand</h3>
                     <p>First, I studied the United Airlines mobile app to analyze and understand the current UX workflow and to identify requirements. </p>
@@ -148,7 +159,7 @@
 
           <!--Pattern Designs-->
           <div class="portfolio-description about underline-link">
-            <h3>Designing with UI Heuristic Patterns</h3>
+            <h3>Applying UI Heuristic Patterns</h3>
               <p>When approaching the redesign, I referred to <a href="http://ui-patterns.com/" target="_blank">ui-patterns.com</a> and <a href="https://www.nngroup.com/" target="_blank">nngroup.com</a>. To minimize the risk of "reinventing the wheel" and creating new UI design patterns, I used these resources as a guideline when implementing new features. The goal was to lower the potential learning curve and new design pains by using universal design patterns that have already been established and known to most users.</p>
               <!--Pattern - Card System-->
               <div class="row about">
@@ -175,7 +186,7 @@
                     <h4>Pattern: Overlay Modal</h4>
                     <p>Selecting a location is an important step of the ticket buying process. An overlay modal was implemented to assist users to stay within the process and to not get lost. </p>
                     <p>The overlay modal sits on top of a transparent dark background to create a focused task and to signify that the user is still within the same part of the process. The user never leaves the UI to enter a new workflow.</p>
-                    <p><h5>Key features of a Card System:</h5>
+                    <p><h5>Key features of a Overlay Modal:</h5>
                       <ul><li>Focuses user to the task on hand</li>
                         <li>Removes distraction within a process</li>
                         <li>Streamline single workflow</li>
@@ -191,7 +202,7 @@
                   <div class="description">
                     <h4>Pattern: Auto Complete</h4>
                     <p>Auto complete was implimented during the location selection process to assist a user to quickly find their destination</p>
-                    <h5>Key features of a Card System:</h5>
+                    <h5>Key features of a Auto Complete:</h5>
                       <ul><li>Assist the user (no memorization), and minimize potential user input errors</li>
                         <li>Quicker look up time - which can lead to positive user engagement</li>
                     </ul>
@@ -206,7 +217,7 @@
                   <div class="description">
                     <h4>Pattern: Calendar Date Picker</h4>
                     <p>A calendar date picker was implemented to streamline the calendar input process. The calendar design is an universal design heuristics that most users already know.</p>
-                    <h5>Key features of a Card System:</h5>
+                    <h5>Key features of a Calendar Picker:</h5>
                       <ul><li>Helps users visualize the dates  and duration that they are choosing to go</li>
                         <li>Familiar experience, leading to faster data selection</li>
                     </ul>
@@ -219,9 +230,9 @@
               <div class="row about">
                 <div class="col-lg-5 col-md-6 align-items-stretch">
                   <div class="description">
-                    <h4>Pattern: Dropdown Expand Details</h4>
+                    <h4>Pattern: Dropdown Expanded Details</h4>
                     <p>Searching for a lot of information can be an overwhelming task. A dropdown feature was implemented to truncate and minimize information. </p>
-                    <h5>Key features of a Card System:</h5>
+                    <h5>Key features of a Expanded Details:</h5>
                       <ul><li>Users can customize what they want and how much they want to see</li>
                         <li>Truncate information is visually less overwhelming and less cluttered</li>
                         <li>Minimized information allows for focused tasks</li>
@@ -238,7 +249,7 @@
                     <h4>Pattern: Completion Reward</h4>
                     <p>Checking out online can be a tedious process. If the process experience for the user is negative, this can deter users from wanting to return</p>
                     <p>So, to help notify and encourage that they have successfully completed their transaction, a completed reward message is implemented at the end.</p>
-                    <h5>Key features of a Card System:</h5>
+                    <h5>Key features of a Completion Reward:</h5>
                       <ul><li>Gamify check out completion and reward the user at the end of the transaction - “make it fun”</li>
                         <li>ndicated user had successfully completed the task</li>
                     </ul>

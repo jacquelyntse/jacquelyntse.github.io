@@ -664,12 +664,12 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 100px 200px;
+  padding: 60px 200px;
   overflow: hidden;
 }
 @media (max-width: 992px) {
   section {
-    padding: 100px 0px;
+    padding: 60px 10px;
     overflow: hidden;
   }
 }

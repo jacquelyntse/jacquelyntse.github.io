@@ -996,7 +996,7 @@ section {
 @media (max-width: 992px) {
   .preview-card img{
     float: right;
-    /*padding:20px 0px;*/
+    padding: 0px;
   }
 }
 

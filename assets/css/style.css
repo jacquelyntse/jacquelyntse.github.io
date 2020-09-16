@@ -993,16 +993,17 @@ section {
   padding:10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .preview-card img{
     float: right;
-    padding:20px 0px;
+    /*padding:20px 0px;*/
   }
 }
 
 .preview-card .bold-text{
   font-weight: 600;
 }
+
 
 /*--------------------------------------------------------------
 # Resume

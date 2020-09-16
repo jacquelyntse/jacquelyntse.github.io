@@ -996,7 +996,7 @@ section {
 @media (max-width: 992px) {
   .preview-card img{
     float: right;
-    padding: 0px;
+    padding: 0px
   }
 }
 
@@ -1004,7 +1004,10 @@ section {
   font-weight: 600;
 }
 
-
+img.img-fluid{
+  object-fit:contain;
+  height:375px;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/

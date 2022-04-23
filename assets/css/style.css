@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #222222;
   transition: 0.3s;
-  font-size: 12px;
+  /*font-size: 12px;*/
   font-weight: 600;
   padding: 0 3px;
   font-family: 'Nunito', sans-serif;;
@@ -623,6 +623,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 996px) {
   #hero img{
   max-width: 160px;
+  display: none;
   }
 }
 /*--------------------------------------------------------------

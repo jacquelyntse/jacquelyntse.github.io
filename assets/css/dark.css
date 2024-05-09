@@ -505,9 +505,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: calc(1.75rem + .2vw);
   font-weight: 700;
-  line-height: 56px;
+  max-width:50%;
 }
 
 #hero h1 span {
@@ -525,10 +525,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero p{
-  margin: 5px 0 30px 0;
-  font-size: 16px;
+  font-size: calc(1.2rem + .2vw);
   font-weight: 400;
-  max-width:90%;
+  max-width:65%;
 }
 
 #hero .btn-get-started {
@@ -589,6 +588,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    max-width:70%;
   }
   #hero h2 {
     font-size: 18px;
@@ -605,6 +605,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-height: 500px) {
   #hero {
     /*height: 120vh;*/
+  }
+    #hero h1 {
+      max-width:100%;
   }
 }
 
@@ -659,6 +662,43 @@ h1, h2, h3, h4, h5, h6 {
   color:#a6cd96;
 }
 
+#about .col-lg-6.col-md-12.align-items-stretch{
+  border-left: none;
+  border-right: none;
+}
+
+#about .row.preview-card{
+  border-bottom: none;
+  border-top: none;
+  padding: 3rem 0;
+}
+
+#about h1 {
+  margin: 0;
+  font-size: calc(1.75rem + .2vw);
+  font-weight: 700;
+  max-width:50%;
+}
+
+@media (max-width: 768px) {
+  #about {
+    /*height: 100vh;*/
+  }
+  #about h1 {
+    font-size: 28px;
+    line-height: 36px;
+    max-width:70%;
+  }
+}
+@media (max-height: 500px) {
+  #about {
+    /*height: 120vh;*/
+  }
+    #about h1 {
+      max-width:100%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -698,7 +738,7 @@ section {
 
 
 
-.section-title h3 {
+/*.section-title h3 {
   margin: 15px 0 0 0;
   font-size:1.25rem;
   line-height: 155%
@@ -706,7 +746,7 @@ section {
 
 .section-title h3 span {
   color: #ffffff;
-}
+}*/
 
 
 .section-title h4 {
@@ -873,7 +913,7 @@ section {
 .col-lg-6.col-md-12.align-items-stretch {
     border-left: 1px solid #686868;
     border-right:1px solid #686868;
-    border-bottom:1px solid #686868;
+    /*border-bottom:1px solid #686868;*/
 }
 
 .row.preview-card {
@@ -891,7 +931,9 @@ section#work{
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   z-index: 1;
-  /*margin-bottom: 50px;*/
+  /*margin-bottom: 50px;
+  background: black;
+  border-radius: 8px;*/
 }
 
 .preview-card::before {
@@ -904,6 +946,12 @@ section#work{
   top: 100%;
   transition: all 0.3s;
   z-index: -1;
+}
+
+.card-overview{
+  padding: 6%;
+  border-radius: 8px;
+  margin-top: 5%;
 }
 
 /*
@@ -963,6 +1011,8 @@ section#work{
 
 .preview-card .tags{
   margin-bottom:30px;
+  margin-top:1.25rem;
+
 }
 
 .preview-card .card-link{
